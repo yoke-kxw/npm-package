@@ -2,9 +2,9 @@
 import TianMap from '../components/TianMap/index.vue'
  
  
-// const install = (Vue)=>{
-//     Vue.component(TianMap.name,TianMap)
-// }
+const install = (Vue)=>{
+    Vue.component(TianMap.name,TianMap)
+}
  
 export default install
 
