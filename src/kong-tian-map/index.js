@@ -2,9 +2,16 @@
 import TianMap from '../components/TianMap/index.vue'
  
  
-// const install = (Vue)=>{
-//     Vue.component(TianMap.name,TianMap)
-// }
+const components = [
+    TianMap
+]
+// 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
+const install = Vue => {
+    // 判断是否可以安装
+    if (install.installed) return
+        // 遍历注册全局组件
+    components.map(component => Vue.component(component.name, component))
+}
  
 export default install
 
@@ -25,8 +32,5 @@ export default install
 //       // 注册组件
 //       app.component(component.name, component)
 //     })
- 
-//     // 定义指令
-//     defineDirective(app)
 //   }
 // }
