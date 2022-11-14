@@ -1,0 +1,14 @@
+{
+  "name": "kong-tian",
+  "version": "1.0.2",
+  "description": "```js\r import TianMap from \"kong-tian\"; // 包名\r import \"kong-tian/tianmap.css\";\r Vue.use(TianMap);\r ```",
+  "main": "tianmap.common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["天地图标记边界范围","vue天地图","天地图边界"],
+	"author": "15216547879@163.com",
+  "license": "ISC",
+  "files": ["*"],
+	"private": false
+}
